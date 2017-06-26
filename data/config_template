@@ -1,0 +1,8 @@
+[API_INFO]
+id = APPLICATION ID GOES HERE
+secret  = mYYXiNXDkSXkB1NnE5VBqkMQtX0
+password =
+user_agent = OFFICIAL APPLICATION DESCRIPTION GOES HERE
+username = bunkerbusta1
+
+note: rename file as config.ini extension (this is gitignored)
