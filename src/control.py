@@ -32,7 +32,7 @@ class control():
         self.model1.set_reddit_user(reddit_user)
 
         # grab all posts from user and store into reddit_post_list
-        self.model1.reddit_post_list = reddit_user.comments.new(limit=1)
+        self.model1.reddit_post_list = reddit_user.comments.new(limit=None)
 
     """
     Print Posts out
