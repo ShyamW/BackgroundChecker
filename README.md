@@ -5,15 +5,11 @@ Simply install the requirements, and fetch posts from a user.
 
 Requirements:
 
--Python 2.X
-
--wx
-
--Tkinter
-
--ConfigParser
-
--praw
+1. Python 2.X
+2. wx
+3. Tkinter
+4. ConfigParser
+5. praw
 
 
 Status: The Twitter feature is currently under construction
