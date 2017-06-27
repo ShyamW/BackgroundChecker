@@ -32,13 +32,13 @@ class control():
         self.model1.set_reddit_user(reddit_user)
 
         # grab all posts from user and store into reddit_post_list
-        self.model1.reddit_post_list = reddit_user.comments.new(limit=None)
+        self.model1.reddit_post_list = reddit_user.comments.new(limit=1)
 
     """
     Print Posts out
     """
     def print_posts(self):
-        with open('index.html', 'w') as f:
+        with open('../data/index.html', 'w') as f:
             for x in self.model1.reddit_post_list:
                 date = str(datetime.fromtimestamp(x.created_utc))
                 post_url = x.link_url + x.id

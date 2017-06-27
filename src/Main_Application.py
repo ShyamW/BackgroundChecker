@@ -4,7 +4,7 @@ import ConfigParser
 import praw
 
 """
-Ensures CLIENT_ID is unique, and not default value in config_template
+Ensures CLIENT_ID is unique, and not default value in config.ini
 @param CLIENT_ID
     String representing CLIENT_ID api key
 @ensures CLIENT_ID is unique
@@ -16,7 +16,7 @@ def ensure_valid_config(CLIENT_ID):
         exit()
 
 """
-Reads API login information from config.ini (gitignored for security purposes. See data/config_template for template)
+Reads API login information from config.ini (gitignored for security purposes. See data/config.ini for template)
     and logs into reddit
 @return reddit_api
     authenticated praw object
@@ -44,6 +44,7 @@ def main():
     reddit_api = read_login_info()
     control1 = control(reddit_api)
     control1.investigate_user()
+    print "Check ../data/index.html"
 
 if __name__ == '__main__':
     main()
