@@ -39,10 +39,10 @@ class control():
     """
     def print_posts(self):
         with open('../data/index.html', 'w') as f:
-            for x in self.model1.reddit_post_list:
-                date = str(datetime.fromtimestamp(x.created_utc))
-                post_url = x.link_url + x.id
-                post_karma = str(x.score)
+            for post in self.model1.reddit_post_list:
+                date = str(datetime.fromtimestamp(post.created_utc))
+                post_url = post.link_url + post.id
+                post_karma = str(post.score)
                 f.write('<h3 style="color: #5e9ca0; display: inline;">' + 'username:&nbsp;&nbsp' +
                         self.model1.reddit_username + '&emsp;&emsp;</h3>\n')
                 f.write('<h3 style="color: #5e9ca0; display: inline;">' + 'date:&nbsp&nbsp' + date + '&emsp;&emsp;' +
@@ -51,7 +51,7 @@ class control():
                 f.write('src="https://cdn4.iconfinder.com/data/icons/web-links/512/41-512.png" alt="" '
                         'width="14" height="14" /></a></p>')
                 f.write('<div class="md">\n')
-                f.write(x.body_html.encode('utf-8') + '\n')
+                f.write(post.body_html.encode('utf-8') + '\n')
                 f.write('</div>\n<hr />\n')
 
     """
