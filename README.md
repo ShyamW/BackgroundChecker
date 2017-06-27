@@ -6,9 +6,13 @@ Simply install the requirements, and fetch posts from a user.
 Requirements:
 
 -Python 2.X
+
 -wx
+
 -Tkinter
+
 -ConfigParser
+
 -praw
 
 
