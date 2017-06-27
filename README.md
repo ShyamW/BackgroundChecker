@@ -4,7 +4,8 @@ This Python GUI application (implemented in MVC) is used to background check a r
 Simply install the requirements, and fetch posts from a user.
 
 Requirements:
-*Python 2.X
+
+-Python 2.X
 -wx
 -Tkinter
 -ConfigParser
