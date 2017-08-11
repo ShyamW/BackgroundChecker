@@ -10,5 +10,6 @@ Requirements:
 4. ConfigParser
 5. praw
 
+Note: API Keys are for Demo purposes only. Please do not abuse.
 
 Status: The Twitter feature is currently under construction
