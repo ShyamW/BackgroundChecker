@@ -1,7 +1,7 @@
 # Background Checker
 
 This Python GUI application (implemented in MVC) is used to background check a reddit or twitter user.
-Simply install the requirements, and fetch posts from a user.
+Simply install the requirements, and view posts from a user in a modern wepage layout.
 
 Requirements:
 1. Python 2.X
